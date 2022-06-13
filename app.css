@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Open+Sans:ital@1&display=swap');
+
+body {
+	font-family: 'Noto Sans', sans-serif;
+}
+
+.hero{
+	margin-top: auto;
+	margin-bottom: auto;
+}

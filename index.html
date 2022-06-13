@@ -1,12 +1,82 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>netlify</title>
-</head>
-<body>
-	test netlify
-</body>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KAKU!</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+		<link rel="stylesheet" href="app.css">
+	</head>
+  <body class="bg-light">
+		<div class="position-fixed p-3">
+			<button class="btn btn-primary text-end" data-bs-toggle="modal" data-bs-target="#step1">Start</button>
+		</div>
+		<div class="container">
+			<div class="text-center d-flex flex-column min-vh-100 justify-content-center p-0 m-0">
+				<span class="fs-1 fw-bold">Selamat Datang</span>
+				<span class="fs-4">Suka pada seseorang, tetapi tidak tahu harus bagaimana? Mungkin Anda merasa canggung, malu, atau bingung.</span>
+			</div>
+		</div>
+		<!-- Step 1 -->
+		<div class="modal fade" id="step1" tabindex="-1" aria-labelledby="step1" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalLabel">Step 1</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body text-center">
+						<span class="fs-3">Siapakah kamu?</span>
+						<div class="mt-3">
+							<button class="btn btn-primary" onclick="step1(1)">Pria</button>
+							<button class="btn btn-warning" onclick="step1(2)">Wanita</button>
+						</div>
+						<div class="mt-3"></div>
+					</div>
+					<!-- <div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+						<button type="button" class="btn btn-primary">Save changes</button>
+					</div> -->
+				</div>
+			</div>
+		</div>
+		<!-- Step 2 -->
+		<div class="modal fade" id="step2" tabindex="-1" aria-labelledby="step2" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalLabel">Step 2</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body text-center">
+						<span class="fs-3">Pilih zodiak gebetan kamu?</span>
+						<div class="mt-3">
+							<div class="row">
+								<div class="col-md-3">
+									<button class="btn btn-primary">Aries (21 Mar - 21 Apr)</button>
+								</div>
+								<div class="col-md-3">
+									<button class="btn btn-success">Taurus (23 Oct - 21 Nov)</button>
+								</div>
+								<div class="col-md-3">
+									<button class="btn btn-danger">Gemini (22 May - 21 Jun</button>
+								</div>
+								<div class="col-md-3">
+									<button class="btn btn-info">Cancer (22 Jun - 22 Jul)</button>
+								</div>
+							</div>
+						</div>
+						<div class="mt-3"></div>
+					</div>
+					<!-- <div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+						<button type="button" class="btn btn-primary">Save changes</button>
+					</div> -->
+				</div>
+			</div>
+		</div>
+		<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+		<script src="app.js"></script>
+	</body>
 </html>
